@@ -1,0 +1,15 @@
+[package]
+name = "infinitemedia-core"
+version = "0.1.0"
+edition = "2024"
+authors = ["Fredrik Andersson"]
+description = "[WIP] An experimental timeline and sequence engine for orchestrating audio and visual events in Rust."
+repository = "https://github.com/Na1w/infinitemedia"
+license = "MIT"
+keywords = ["media", "timeline", "synchronization", "wgpu", "reactive"]
+categories = ["multimedia", "graphics", "game-engines"]
+
+[dependencies]
+infinitegfx-core = "0.1.0"
+bytemuck = { version = "1.25.0", features = ["derive"] }
+wgpu = "28.0.0"
