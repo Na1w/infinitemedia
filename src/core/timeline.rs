@@ -18,7 +18,6 @@ impl Ord for IntervalFloat {
     }
 }
 
-
 /// Represents a time interval with associated data.
 #[derive(Clone, Debug)]
 pub struct Interval<T> {
