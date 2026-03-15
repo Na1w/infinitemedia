@@ -210,7 +210,7 @@ impl MediaEngine {
         let active_events = self.content.timeline.active_at(time);
 
         // 1. Process Parameter and Trigger events
-        for event in &active_events {
+        for event in active_events.clone() {
             match event.data {
                 MediaAction::Parameter(id, val) => {
                     if id < self.state.parameters.len() {
@@ -421,7 +421,7 @@ impl GfxFrameProcessor for MediaEngine {
 
     fn update(&mut self, time: f32, queue: &wgpu::Queue, globals_buf: &wgpu::Buffer) {
         let active_events = self.content.timeline.active_at(time);
-        for event in &active_events {
+        for event in active_events {
             match event.data {
                 MediaAction::Scene(idx) => {
                     self.content.scenes[idx].update(time, queue, globals_buf);

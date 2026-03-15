@@ -1,6 +1,6 @@
 [package]
 name = "infinitemedia-core"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 authors = ["Fredrik Andersson"]
 description = "[WIP] An experimental timeline and sequence engine for orchestrating audio and visual events in Rust."
@@ -13,3 +13,4 @@ categories = ["multimedia", "graphics", "game-engines"]
 infinitegfx-core = "0.1.0"
 bytemuck = { version = "1.25.0", features = ["derive"] }
 wgpu = "28.0.0"
+intervaltree = "0.2.7"
